@@ -17,5 +17,5 @@ $(function() {
 $(window).on('load', function(){
     "use strict";
     //прелоадер
-    $(".preloader").delay(500).fadeOut("slow");
+    $(".preloader").delay(1000).fadeOut("slow");
 });
