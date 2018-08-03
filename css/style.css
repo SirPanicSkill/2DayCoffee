@@ -1,0 +1,413 @@
+/* normalize */
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* Body typography */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+h1 small {
+  font-size: 24px;
+}
+h2 {
+  font-size: 38px;
+  line-height: 24px;
+  margin-top: 56px;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+h2 small {
+  font-size: 16px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+h3 small {
+  font-size: 13px;
+}
+h4,
+h5,
+h6 {
+  line-height: 24px;
+}
+h4 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+h4 small {
+  font-size: 14px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0;
+}
+/* Links */
+a {
+  text-decoration: none;
+  color: #41000c;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+  outline: 0;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+.more-link {
+  display: block;
+  margin: 12px 0 0px;
+  position: relative;
+  line-height: 18px;
+  font-size: 18px;
+}
+/* Lead text */
+.lead {
+  font-size: 20px;
+  line-height: 30px;
+}
+/* Form elements */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  -webkit-appearance: none;
+  box-shadow: none;
+  text-shadow: none !important;
+}
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  outline: none;
+}
+select {
+  line-height: 24px;
+}
+input[type="submit"] {
+  text-shadow: none !important;
+  font-weight: normal;
+  outline: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* hr */
+hr {
+  border-color: #333333;
+}
+/* Responsive typography */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  h1 small {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 36px;
+  }
+  h2 small {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  h3 small {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+  h1 small {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  h2 small {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h3 small {
+    font-size: 11px;
+  }
+}
+/* ------ */
+/* NAVBAR */
+/* ------ */
+.navbar {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+  margin-bottom: 0;
+}
+.navbar li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.navbar-transparent {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.navbar-toggle:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .navbar-inverse {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .navbar-transparent.navbar-inverse {
+    position: relative;
+  }
+}
+/* ----------- */
+/* THEME FONTS */
+/* ----------- */
+body {
+  font-family: 'Akzidenz-grotesk pro light', sans-serif;
+}
+body input,
+body textarea,
+body .btn,
+body button {
+  font-family: 'Akzidenz-grotesk pro light', sans-serif;
+}
+.lighter,
+.light,
+.lead {
+  font-weight: 300 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Akzidenz-grotesk pro light condensed', sans-serif;
+  color: rgb(42, 210, 197);
+}
+h1.lighter,
+h2.lighter,
+h3.lighter,
+h4.lighter,
+h5.lighter,
+h6.lighter {
+  font-weight: 100 !important;
+}
+h1.flow-text {
+  font-size: 4rem;
+}
+/**************************
+       site castomize
+**************************/
+/* убрать выделение */
+body {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0);
+  outline: none;
+  
+  /*-moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;*/
+  resize: none;
+
+  -webkit-text-size-adjust: none;
+  background-color: #f3f3f5;
+}
+/* оставить выделение для полей ввода */
+input, textarea {
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
+  resize: none;
+}
+
+.max-width-1280 {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/**************************************
+              ГЛАВНАЯ
+***************************************/
+.preloader{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:white;
+  z-index:99999;
+}
+.preloader .item{
+  position:absolute;
+  width:150px;
+  height:150px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.preloader .item img {
+  width: 100%;
+  height: auto;
+}
+/***** header *****/
+header {
+  width: 100%;
+  height: auto;
+}
+  /*logo*/
+  .logo_wrapper {
+    height: 180px;
+  }
+  .logo {
+    text-align: center;
+  }
+  .logo img {
+    max-width:200px;
+    height:auto;
+  }
+  /*intermedia*/
+  .intermedia {
+    height: 60px;
+  }
+  /*navigation*/
+  nav {
+    background-color: transparent;
+    position: relative;
+    box-shadow: none;
+  }
+  nav .tabs .tab {
+    text-transform: none;
+  }
+  nav .tabs.tabs-transparent .indicator {
+    background-color: rgb(42, 210, 197);
+  }
+  nav ul:not(.side-nav) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav ul a, nav a {
+    color: rgb(42, 210, 197);
+  }
+  nav ul a:hover {
+    background-color: transparent;
+  }
+  .navbar-fixed {
+    z-index: 999;
+  }
+/***** body *****/
+main { 
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: inline-block; 
+  position: relative;  
+}
+
+/* sections */
+main h1 {
+  text-transform: none;
+  text-align: left;
+}
+
+/***** footer *****/
+
+/**************************************
+              MEDIA
+***************************************/
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.3),
+  only screen and (-o-min-device-pixel-ratio: 13/10),
+  only screen and (min-resolution: 120dpi),
+  (pointer:coarse) {
+  
+}
