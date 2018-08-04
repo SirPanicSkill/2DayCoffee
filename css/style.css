@@ -344,12 +344,17 @@ header {
   width: 100%;
   height: auto;
 }
+header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
   /*logo*/
   .logo_wrapper {
-    height: 180px;
+    height: auto;
   }
   .logo {
     text-align: center;
+    margin-top: 5vh;
   }
   .logo img {
     max-width:200px;
@@ -357,13 +362,37 @@ header {
   }
   /*intermedia*/
   .intermedia {
-    height: 60px;
+    height: auto;
   }
+    /*lang*/
+    .language a {
+      padding: 5px;
+      color: rgb(42, 210, 197);
+      margin-right: 5px;
+      height: auto;
+      font-size: inherit;
+    }
+    .language a.btn {
+      color: #f3f3f5;
+      background-color: rgb(42, 210, 197);
+    }
+    /*social*/
+    .social a {
+      display: inline-block;
+      height: 46px;
+    }
+    .social img {
+      height: 40px;
+      margin-right: 5px;
+    }
   /*navigation*/
   nav {
     background-color: transparent;
     position: relative;
     box-shadow: none;
+    height: auto;
+    width: auto;
+    overflow: hidden;
   }
   nav .tabs .tab {
     text-transform: none;
@@ -382,23 +411,45 @@ header {
   nav ul a:hover {
     background-color: transparent;
   }
+  nav .mobile-btn-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+  nav .mobile-btn-menu b i {
+    display: inline-block;
+    font-size: inherit;
+  }
   .navbar-fixed {
     z-index: 999;
   }
 /***** body *****/
 main { 
   width: 100%;
-  height: auto;
-  overflow: hidden;
-  display: inline-block; 
+  height: auto; 
   position: relative;  
 }
 
-/* sections */
-main h1 {
-  text-transform: none;
-  text-align: left;
-}
+  /*sections*/
+  main section h1 {
+    text-transform: none;
+    text-align: left;
+  }
+  section *::selection {
+    color: #f3f3f5; /* Цвет текста */
+    background-color: rgb(42, 210, 197); /* Цвет фона */
+  }
+  section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+  }
+  section.sec-active {
+    opacity: 1;
+  }
 
 /***** footer *****/
 
