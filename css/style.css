@@ -443,9 +443,14 @@ main {
   section {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -9999px;
+  }
+  section {
     opacity: 0;
-    transition: all .3s;
+    transition: all 1s;
+  }
+  section.sec-active {
+    left: 0;
   }
   section.sec-active {
     opacity: 1;

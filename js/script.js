@@ -13,13 +13,46 @@ $(function() {
 	});
 
 	//навигация меню
-	var menu_count = 0;
-	$('.menu-click.tab').each(function() {
-		menu_count++;
-		$(this).click( function() {
-			$('main').find('section[data-attr='+ menu_count +']').toggleClass('sec-active');
+	$('.menu-click').each(function() {
+		var menu_count = $(this).attr('data-attr');
+		$(this).on('click', function() {
+			$('section[data-attr='+ menu_count +']').addClass('sec-active').siblings().removeClass('sec-active');
 		});
-		console.log(menu_count);
+	});
+
+	//смена языка
+	var LANGUAGE;
+
+	$.redrawLanguage = function (lang) {
+		$.ajax({
+			url : 'languages/' + lang + '.json', //тянем файл с языком
+			dataType : 'json',
+			success : function (response) {
+				LANGUAGE = response; //записываем в глобальную переменную, а вдруг пригодиться
+				$('body').find("[lang]").each(function () {//ищем все элементы с атрибутом
+					var lang = LANGUAGE[ $(this).attr('lang') ]; //берем нужное значение по атрибуту lng
+					var tag = $(this)[0].tagName.toLowerCase();
+					switch (tag) {//узнаем название тега
+						case "input":
+							$(this).val(lang);
+							break;
+						default:
+							$(this).html(lang);
+							break;
+					}
+				});
+			}
+		});
+	};
+	$('.lang-ru').on('click', function(e) {
+		e.preventDefault();
+		$.redrawLanguage('rus');
+		$(this).addClass('btn').siblings().removeClass('btn');
+	});
+	$('.lang-en').on('click', function(e) {
+		e.preventDefault();
+		$.redrawLanguage('eng');
+		$(this).addClass('btn').siblings().removeClass('btn');
 	});
 });
 
