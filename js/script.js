@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	//tabs init
 	var tabsElems = document.querySelector('.tabs');
 	M.Tabs.init(tabsElems, {});
+	//fix nav
+	var navElems = document.querySelector('nav');
+	M.Pushpin.init(navElems, {top: document.querySelector('header').offsetHeight});
 });
 
 /*globals jQuery, document */

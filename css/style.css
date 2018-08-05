@@ -397,6 +397,12 @@ header {
     width: auto;
     overflow: hidden;
   }
+  nav.pinned {
+    width: 100%;
+    left: 0;
+    background-color: #f3f3f5;
+    z-index: 1;
+  }
   nav .tabs .tab {
     text-transform: none;
   }
@@ -425,6 +431,9 @@ header {
     justify-content: space-between;
     width: 100%;
     margin: 0;
+  }
+  nav .mobile-btn-menu > i {
+    font-size: 36px;
   }
   nav .mobile-btn-menu b i {
     display: inline-block;
