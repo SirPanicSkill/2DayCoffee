@@ -1,4 +1,9 @@
 {
-	"hello_world":"Hello World",
-	"some_text":"Some Text"
+	"city_moscow":"Moscow",
+	"main-page":"Home",
+	"addresses":"Addresses",
+	"work":"Work",
+	"application":"Application",
+	"contacts":"Contacts",
+	"brandPhilosophy":"Brand Philosophy"
 }

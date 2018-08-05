@@ -1,4 +1,9 @@
 {
-	"hello_world":"Привет Мир",
-	"some_text":"Некоторый текст"
+	"city_moscow":"Москва",
+	"main-page":"Главная",
+	"addresses":"Адреса кофеен",
+	"work":"Работа в компании",
+	"application":"Приложение",
+	"contacts":"Контакты",
+	"brandPhilosophy":"Философия бренда"
 }

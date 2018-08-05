@@ -324,7 +324,7 @@ input, textarea {
   position:fixed;
   width:100%;
   height:100%;
-  background:white;
+  background:#f3f3f5;
   z-index:99999;
 }
 .preloader .item{
@@ -372,6 +372,9 @@ header {
       height: auto;
       font-size: inherit;
     }
+    .language a:hover {
+      color: #f3f3f5;
+    }
     .language a.btn {
       color: #f3f3f5;
       background-color: rgb(42, 210, 197);
@@ -399,6 +402,12 @@ header {
   }
   nav .tabs.tabs-transparent .indicator {
     background-color: rgb(42, 210, 197);
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  nav .tabs .tab a {
+    color: rgb(42, 210, 197) !important;
+    padding: 0 10px;
   }
   nav ul:not(.side-nav) {
     display: flex;
