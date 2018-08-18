@@ -385,8 +385,8 @@ header {
       height: 46px;
     }
     .social img {
-      height: 40px;
-      margin-right: 5px;
+      height: 25px;
+      margin: 5px 7px 5px 0px;
     }
   /*navigation*/
   nav {
@@ -417,7 +417,7 @@ header {
     color: rgb(42, 210, 197) !important;
     padding: 0 10px;
   }
-  nav ul:not(.side-nav) {
+  nav ul:not(.sidenav) {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -444,6 +444,11 @@ header {
   .navbar-fixed {
     z-index: 999;
   }
+  .sidenav {
+    width: auto;
+    min-width: 200px;
+    max-width: 40vw;
+  }
 /***** body *****/
 main { 
   width: 100%;
@@ -467,7 +472,7 @@ main {
   }
   section {
     opacity: 0;
-    transition: all 1s;
+    transition: all .8s;
   }
   section.sec-active {
     left: 0;
