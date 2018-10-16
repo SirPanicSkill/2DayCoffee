@@ -21,6 +21,8 @@ $(function() {
 			e.preventDefault();
 			$('section[data-attr='+ menu_count +']').addClass('sec-active').siblings().removeClass('sec-active');
 			$('.tabs').find('.indicator').css('opacity', '1');
+			//set main height
+			setMainHeight();
 		});
 	});
 	//переход по лого на главную
@@ -29,11 +31,12 @@ $(function() {
 		$('section[data-attr]').removeClass('sec-active').siblings().removeClass('sec-active');
 		$('section.section-main').addClass('sec-active');
 		$('.tabs').find('.indicator').css('opacity', '0');
+		//set main height
+		setMainHeight();
 	});
 
 	//смена языка
 	var LANGUAGE;
-
 	$.redrawLanguage = function (lang) {
 		$.ajax({
 			url : 'languages/' + lang + '.json', //тянем файл с языком
@@ -68,11 +71,35 @@ $(function() {
 		$.redrawLanguage('eng');
 		$(this).addClass('btn').siblings().removeClass('btn');
 	});
+	//yandex map
+	ymaps.ready(init);
+	var myMap, 
+		myPlacemark;
+	function init(){ 
+		myMap = new ymaps.Map("map", {
+			center: [55.773935, 37.626789],
+			zoom: 16
+		}); 
+		
+		myPlacemark = new ymaps.Placemark([55.773935, 37.626789], {
+			hintContent: 'TODAY coffee',
+			balloonContent: 'Новый сетевой проект в сегменте городских кафе'
+		});
+		
+		myMap.geoObjects.add(myPlacemark);
+	}
 });
+
+//height main
+function setMainHeight() {
+	$('main').css('height', ''+ $('section.sec-active').height() +'');
+};
 
 /* после загрузки страницы */
 $(window).on('load', function(){
 	"use strict";
 	//прелоадер
 	$(".preloader").delay(1000).fadeOut("slow");
+	//set main height
+	setMainHeight();
 });

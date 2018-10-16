@@ -1,9 +1,12 @@
 {
 	"city_moscow":"Moscow",
 	"main-page":"Home",
-	"addresses":"Addresses",
+	"addresses":"Address",
 	"work":"Work",
 	"application":"Application",
 	"contacts":"Contacts",
+	"mainAddress":"Mail address",
+	"phoneNumber":"Phone",
+	"email":"Email",
 	"brandPhilosophy":"Brand Philosophy"
 }

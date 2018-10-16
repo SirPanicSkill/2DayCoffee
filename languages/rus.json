@@ -1,9 +1,12 @@
 {
 	"city_moscow":"Москва",
 	"main-page":"Главная",
-	"addresses":"Адреса кофеен",
+	"addresses":"Наш адрес",
 	"work":"Работа в компании",
 	"application":"Приложение",
 	"contacts":"Контакты",
+	"mainAddress":"Почтовый адрес",
+	"phoneNumber":"Номер телефона",
+	"email":"Почта",
 	"brandPhilosophy":"Философия бренда"
 }

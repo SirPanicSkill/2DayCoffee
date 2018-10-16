@@ -128,8 +128,8 @@
               <b>TODAY <i>coffee</i></b>
             </a>
 						<ul class="hide-on-med-and-down tabs tabs-transparent">
-							<li class="tab"><a data-attr="1" lang="addresses" class="flow-text menu-click" href="#">Адреса кофеен</a></li>
-							<li class="tab"><a data-attr="2" lang="work" class="flow-text menu-click" href="#">Работа в компании</a></li>
+							<li class="tab"><a data-attr="1" lang="addresses" class="flow-text menu-click" href="#">Наш адрес</a></li>
+							<!-- <li class="tab"><a data-attr="2" lang="work" class="flow-text menu-click" href="#">Работа в компании</a></li> -->
 							<li class="tab"><a data-attr="3" lang="application" class="flow-text menu-click" href="#">Приложение</a></li>
 							<li class="tab"><a data-attr="4" lang="contacts" class="flow-text menu-click" href="#">Контакты</a></li>
 						</ul>
@@ -137,13 +137,13 @@
         </nav>
         <ul class="sidenav" id="slide-out">
           <li><a data-attr="0" lang="main-page" class="flow-text menu-click sidenav-close" href="#">Главная</a></li>
-          <li><a data-attr="1" lang="addresses" class="flow-text menu-click sidenav-close" href="#">Адреса кофеен</a></li>
-          <li><a data-attr="2" lang="work" class="flow-text menu-click sidenav-close" href="#">Работа в компании</a></li>
+          <li><a data-attr="1" lang="addresses" class="flow-text menu-click sidenav-close" href="#">Наш адрес</a></li>
+          <!-- <li><a data-attr="2" lang="work" class="flow-text menu-click sidenav-close" href="#">Работа в компании</a></li> -->
           <li><a data-attr="3" lang="application" class="flow-text menu-click sidenav-close" href="#">Приложение</a></li>
           <li><a data-attr="4" lang="contacts" class="flow-text menu-click sidenav-close" href="#">Контакты</a></li>
         </ul>
       </header>
-      <main class="container">
+      <main class="">
         <section data-attr="0" class="section-main sec-active">
 					<div class="container">
 						<div class="row">
@@ -157,58 +157,65 @@
 					</div>
         </section>
         <section data-attr="1" class="section-address">
-            <div class="container">
-              <div class="row">
-                <div class="col s12">
-                  <h1 lang="addresses" class="flow-text">Адреса кофеен</h1>
-                  <p class="flow-text"><b>TODAY <i>coffee</i></b> - это новый сетевой проект в сегменте городских кафе, предлагающий широкий ассортимент качественного натурального кофе. <b>TODAY <i>coffee</i></b> является особым местом для встреч и отдыха современных стильных людей - от представителей бизнеса до людей творческих професий, объединенных хорошим вкусом и любовью к удовольствиям.
-                    Сочетая в себе уютную атмосферу европейских кофеен, исключительно высокое качество кофе и актуальный демократичный формат, <b>TODAY <i>coffee</i></b> обладает уникальным характером. Настроение бренда сконцентрировано вокруг особой культуры городских кафе, становящихся неотъемлимой частью жизни современных людей. Концепция, предполагающая естественность во всем - начиная от выбора исключительно натуральных ингридиентов, и заканчивая уютной непринужденной атмосферой, позволит каждому чувствовать себя свободно и легко. 
-                    Высокое качество и натуральность в сочетании с демократичными ценами, качественным обслуживанием, уютной атмосферой и возможностью купить десерты и кофе на вынос определяют успешность проекта.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                  <h1 lang="addresses" class="flow-text">Наш адрес</h1>
+                  <div class="ya-map">
+                    <div id="map" style="width: 100%; height: 400px"></div>
+                  </div>
                 </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section data-attr="2" class="section-work">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h1 lang="work" class="flow-text">Работа в компании</h1>
+                <p class="flow-text"><b>TODAY <i>coffee</i></b> - это новый сетевой проект в сегменте городских кафе, предлагающий широкий ассортимент качественного натурального кофе. <b>TODAY <i>coffee</i></b> является особым местом для встреч и отдыха современных стильных людей - от представителей бизнеса до людей творческих професий, объединенных хорошим вкусом и любовью к удовольствиям.
+                  Сочетая в себе уютную атмосферу европейских кофеен, исключительно высокое качество кофе и актуальный демократичный формат, <b>TODAY <i>coffee</i></b> обладает уникальным характером. Настроение бренда сконцентрировано вокруг особой культуры городских кафе, становящихся неотъемлимой частью жизни современных людей. Концепция, предполагающая естественность во всем - начиная от выбора исключительно натуральных ингридиентов, и заканчивая уютной непринужденной атмосферой, позволит каждому чувствовать себя свободно и легко. 
+                  Высокое качество и натуральность в сочетании с демократичными ценами, качественным обслуживанием, уютной атмосферой и возможностью купить десерты и кофе на вынос определяют успешность проекта.</p>
               </div>
             </div>
-          </section>
-          <section data-attr="2" class="section-address">
-            <div class="container">
-              <div class="row">
-                <div class="col s12">
-                  <h1 lang="work" class="flow-text">Работа в компании</h1>
-                  <p class="flow-text"><b>TODAY <i>coffee</i></b> - это новый сетевой проект в сегменте городских кафе, предлагающий широкий ассортимент качественного натурального кофе. <b>TODAY <i>coffee</i></b> является особым местом для встреч и отдыха современных стильных людей - от представителей бизнеса до людей творческих професий, объединенных хорошим вкусом и любовью к удовольствиям.
-                    Сочетая в себе уютную атмосферу европейских кофеен, исключительно высокое качество кофе и актуальный демократичный формат, <b>TODAY <i>coffee</i></b> обладает уникальным характером. Настроение бренда сконцентрировано вокруг особой культуры городских кафе, становящихся неотъемлимой частью жизни современных людей. Концепция, предполагающая естественность во всем - начиная от выбора исключительно натуральных ингридиентов, и заканчивая уютной непринужденной атмосферой, позволит каждому чувствовать себя свободно и легко. 
-                    Высокое качество и натуральность в сочетании с демократичными ценами, качественным обслуживанием, уютной атмосферой и возможностью купить десерты и кофе на вынос определяют успешность проекта.</p>
-                </div>
+          </div>
+        </section> -->
+        <section data-attr="3" class="section-app">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h1 lang="application" class="flow-text">Приложение</h1>
+              </div>
+              <div class="col l6 m6 s12">
+                <a href="https://itunes.apple.com/ru/app/today-coffee/id1437892566?mt=8" target="_blank" class="apple"><img src="images/apple.svg" alt="apple"></a>
+              </div>
+              <div class="col l6 m6 s12">
+                <a href="https://play.google.com/store/apps/details?id=com.loyaltyplant.partner.tudei" target="_blank" class="apple"><img src="images/android.svg" alt="android"></a>
               </div>
             </div>
-          </section>
-          <section data-attr="3" class="section-address">
-            <div class="container">
-              <div class="row">
-                <div class="col s12">
-                  <h1 lang="application" class="flow-text">Приложение</h1>
-                  <p class="flow-text"><b>TODAY <i>coffee</i></b> - это новый сетевой проект в сегменте городских кафе, предлагающий широкий ассортимент качественного натурального кофе. <b>TODAY <i>coffee</i></b> является особым местом для встреч и отдыха современных стильных людей - от представителей бизнеса до людей творческих професий, объединенных хорошим вкусом и любовью к удовольствиям.
-                    Сочетая в себе уютную атмосферу европейских кофеен, исключительно высокое качество кофе и актуальный демократичный формат, <b>TODAY <i>coffee</i></b> обладает уникальным характером. Настроение бренда сконцентрировано вокруг особой культуры городских кафе, становящихся неотъемлимой частью жизни современных людей. Концепция, предполагающая естественность во всем - начиная от выбора исключительно натуральных ингридиентов, и заканчивая уютной непринужденной атмосферой, позволит каждому чувствовать себя свободно и легко. 
-                    Высокое качество и натуральность в сочетании с демократичными ценами, качественным обслуживанием, уютной атмосферой и возможностью купить десерты и кофе на вынос определяют успешность проекта.</p>
-                </div>
+          </div>
+        </section>
+        <section data-attr="4" class="section-contacts">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h1 lang="contacts" class="flow-text">Контакты</h1>
+                <p class="flow-text">
+                  <span lang="mailAddress">Почтовый адрес</span>: 129090, Мещанская, 1/17 стр.1 для ООО «Тудэй»<br/>
+                  <span lang="phoneNumber">Номер телефона</span>: <a href="tel:+74959219494">8(495)921-94-94</a><br/>
+                  <span lang="email">Почта</span>: <a href="mailto:info@2daycoffee.ru">info@2daycoffee.ru</a>
+                </p>
               </div>
             </div>
-          </section>
-          <section data-attr="4" class="section-address">
-            <div class="container">
-              <div class="row">
-                <div class="col s12">
-                  <h1 lang="addresses" class="flow-text">Контакты</h1>
-                  <p class="flow-text"><b>TODAY <i>coffee</i></b> - это новый сетевой проект в сегменте городских кафе, предлагающий широкий ассортимент качественного натурального кофе. <b>TODAY <i>coffee</i></b> является особым местом для встреч и отдыха современных стильных людей - от представителей бизнеса до людей творческих професий, объединенных хорошим вкусом и любовью к удовольствиям.
-                    Сочетая в себе уютную атмосферу европейских кофеен, исключительно высокое качество кофе и актуальный демократичный формат, <b>TODAY <i>coffee</i></b> обладает уникальным характером. Настроение бренда сконцентрировано вокруг особой культуры городских кафе, становящихся неотъемлимой частью жизни современных людей. Концепция, предполагающая естественность во всем - начиная от выбора исключительно натуральных ингридиентов, и заканчивая уютной непринужденной атмосферой, позволит каждому чувствовать себя свободно и легко. 
-                    Высокое качество и натуральность в сочетании с демократичными ценами, качественным обслуживанием, уютной атмосферой и возможностью купить десерты и кофе на вынос определяют успешность проекта.</p>
-                </div>
-              </div>
-            </div>
-          </section>
+          </div>
+        </section>
       </main>
       <footer>
         
       </footer>
       <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+      <!-- yandex maps -->
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
     </body>
