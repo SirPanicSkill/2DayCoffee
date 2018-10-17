@@ -191,7 +191,7 @@ hr {
   }
   h1 {
     font-size: 21px;
-    line-height: 24px;
+    line-height: 32px;
   }
   h1 small {
     font-size: 14px;
@@ -485,6 +485,44 @@ main {
     opacity: 1;
   }
 
+  /*product menu*/
+  .productMenu__wrapper {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .productMenu__name {
+    color: rgb(42, 210, 197);
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-right: 10px;
+  }
+  .productMenu__price {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (1900 - 320)));
+  }
+  .extra-price {
+    text-align: right;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1900 - 320)));
+    font-style: italic;
+    color: rgb(42, 210, 197);
+  }
+
   /*adress*/
   .ya-map {
     display: block;
@@ -518,9 +556,8 @@ main {
 /**************************************
               MEDIA
 ***************************************/
-@media  only screen and (-webkit-min-device-pixel-ratio: 1.3),
-  only screen and (-o-min-device-pixel-ratio: 13/10),
-  only screen and (min-resolution: 120dpi),
-  (pointer:coarse) {
-  
+@media (max-width: 700px) {
+  .productMenu__wrapper {
+    flex-direction: column;
+  }
 }
