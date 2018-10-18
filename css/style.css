@@ -354,11 +354,35 @@ header {
   }
   .logo {
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 4vh;
   }
   .logo img {
     max-width:200px;
     height:auto;
+  }
+  .logo_name {
+    position: relative;
+    display: inline-block;
+  }
+  .logo_name::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: -15px;
+    top: calc(50% - 1px);
+  }
+  .logo_name::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    right: -15px;
+    top: calc(50% - 1px);
   }
   /*intermedia*/
   .intermedia {

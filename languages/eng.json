@@ -1,6 +1,7 @@
 {
 	"city_moscow":"Moscow",
 	"main-page":"Home",
+	"logo_name":"COFFEE HOUSE",
 	"productMenu__name-black":"Black Coffee",
 	"productMenu__price-espresso":"Espresso",
 	"productMenu__price-regularCoffee":"Regular coffee",
@@ -28,6 +29,7 @@
 	"extra-price-espresso":"espresso extra + 50₽",
 	"extra-price-milk":"milk extra + 70₽",
 	"addresses":"Address",
+	"addresses_text":"We are located at: Meschanskaya Street, 1/17с1, between the metro stations Sukharevskaya and Tsvetnoy Boulevard.",
 	"work":"Work",
 	"application":"Application",
 	"application_text":"Download our app, show a bonus card with each order in our institution and get points. For accumulated points you can get nice gifts! Your first gift you can receive on your next visit.",
